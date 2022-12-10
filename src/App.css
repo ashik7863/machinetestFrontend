@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.btn button{
+  margin: 25px 10px;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    border-radius: 7px;
+    background-color: aliceblue;
+    transition: 0.5s;
+}
+.btn button:hover{
+  background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+.main{
+  display: flex;
+  justify-content: center;
+}
+.main th{
+width: 150px;
+}
+.filter{
+  border: 2px solid green;
+  padding: 0px 10px;
+}
+/* .filter div{
+  margin: 5px;
+} */
+h1{
+  margin: 0;
+}
+.upper{
+  display: flex;
+  justify-content: space-between;
+}
+.add-listPro{
+  position: absolute;
+  background-color: aliceblue;
+  height: auto;
+  width: 150px;
+  z-index: 1;
+}
+.add-listCom{
+  position: absolute;
+  background-color: aliceblue;
+  height: auto;
+  width: 150px;
+  z-index: 1;
+}
+/* .country-section{
+  height: 30px;
+} */
+.country-section span{
+  height: 30px;
+  text-align: center;
+}
+
+.css-13cymwt-control{
+  height: 30px;
+  margin-top: -5px;
+}

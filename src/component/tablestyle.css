@@ -1,0 +1,64 @@
+.table{
+    border: 2px solid burlywood;
+    display: flex;
+    width: 100%;
+}
+.tbl-head{
+    vertical-align: middle;
+    background: #c2c5d4;
+    font-size: 13px;   
+}
+.tbl-head span{
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 16px;
+}
+.dropdownProject{
+    position: absolute;
+    background-color: aliceblue;
+    height: 70px;
+    width: 200px;
+    border: 1px solid black;
+}
+.dropdownCompany{
+    position: absolute;
+    background-color: aliceblue;
+    height: 70px;
+    width: 200px;
+    border: 1px solid black;
+}
+.dropdownCountry{
+    position: absolute;
+    position: absolute;
+    background-color: aliceblue;
+    height: 70px;
+    width: 200px;
+    border: 1px solid black;
+}
+.add-list{
+    position: absolute;
+    background-color: aliceblue;
+    height: auto;
+    width: 150px;
+}
+.add-list div{
+    cursor: pointer;
+}
+.country{
+    display: flex;
+    background-color: #FFFFFF;
+}
+.country .plus{
+    cursor: pointer;
+}
+.country input{
+    border: none;
+}
+.country{
+    width: 190px;
+    border: 1px solid black;
+    margin-left: 3px;
+}
+.country-list{
+    padding: 5px 5px;
+}
