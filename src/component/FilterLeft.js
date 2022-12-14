@@ -22,7 +22,7 @@ const FilterLeft = () => {
   const [dependentCom, setDependentCom] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/tabledata").then((result) => {
+    fetch("machintestbackend-production.up.railway.app/tabledata").then((result) => {
       result.json().then((resp) => {
         setData(resp);
         setDropData(resp);
