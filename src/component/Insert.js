@@ -19,7 +19,7 @@ const Insert = () => {
                 company
             } = val;
             const { data } = await axios.post(
-              "https://machintestbackend-production.up.railway.app/insert",
+              "http://localhost:4000/insert",
               {
                 projectref,
                 projectname,
