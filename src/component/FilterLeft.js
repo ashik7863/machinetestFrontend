@@ -22,7 +22,7 @@ const FilterLeft = () => {
   const [dependentCom, setDependentCom] = useState([]);
 
   useEffect(() => {
-    fetch("https://machintestbackend-production.up.railway.app/tabledata").then((result) => {
+    fetch("http://localhost:4000/tabledata").then((result) => {
       result.json().then((resp) => {
         setData(resp);
         setDropData(resp);
@@ -104,8 +104,10 @@ const FilterLeft = () => {
     company.current.value = e.target.innerText;
     setSuggestionCom(false);
     const item = data.filter((val) => {
-      if (val.country === pro.current.value) {
-        return val.country;
+      
+      if (val.company === company.current.value) {
+        console.log(val);
+        return val.company;
       }
     });
     setDropData(item);
@@ -154,7 +156,12 @@ const FilterLeft = () => {
   }
   function applyTableData(e) {
     e.preventDefault();
-    setTableData(temp);
+    
+    if(dropdata.length==0){
+      setTableData(temp);
+    }else{
+      setTableData(dropdata);
+    }
     setShow1(true);
   }
   function funcShow(){
@@ -166,6 +173,9 @@ const FilterLeft = () => {
     setDropData(allData);
     setTableData(allData);
     setData(allData);
+    pro.current.value='';
+    company.current.value='';
+    count.current.value='';
   }
   return (
     <div>
