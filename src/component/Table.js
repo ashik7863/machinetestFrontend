@@ -21,7 +21,7 @@ const Table = ({ tbldata, show1 }) => {
   // const [dropdatacountry, setDropDataCountry] = useState([]);
 
   useEffect(() => {
-    fetch("machintestbackend-production.up.railway.app/tabledata").then((result) => {
+    fetch("https://machintestbackend-production.up.railway.app/tabledata").then((result) => {
       result.json().then((resp) => {
         setData(resp);
         setTableData(resp);
